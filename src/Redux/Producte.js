@@ -11,6 +11,10 @@ async function getprodatcet(){
 
             title,
 
+            category,
+            
+            type,
+
             price,
 
             image_one{
@@ -39,11 +43,11 @@ async function getprodatcet(){
 
 await getprodatcet()
 
-const producte = createSlice({
+const products = createSlice({
     name:"products",
     initialState ,
 })
 
 
 
-export default producte.reducer
+export default products.reducer

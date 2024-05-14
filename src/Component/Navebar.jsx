@@ -15,9 +15,9 @@ export const Navebar = () => {
 
   return (
     <>
-        <motion.header animate={{top:0}} transition={{duration:0.5}} className='py-10  text-right px-10 fixed w-full md:relative bg-white z-50 h-24 top-[-10rem]'>
-            <nav className='hidden md:flex items-center  w-full justify-evenly container mx-auto '>
-                <div className='flex  items-center  md:text-2xl justify-between w-1/2'>
+        <motion.header animate={{top:0}} transition={{duration:0.5}} className='py-10  text-right px-5 fixed w-full md:relative bg-white z-50 h-24 top-[-10rem] '>
+            <nav className='hidden md:flex items-center  w-full justify-around container mx-auto '>
+                <div className='flex  items-center  md:text-2xl justify-between  space-x-10'>
                   <h1 className="text-3xl font-bold">
                     <Link className="cursor-pointer" to="/">Dragon</Link>
                   </h1>
@@ -33,10 +33,10 @@ export const Navebar = () => {
                   </Link>
                 </div>
             </nav>
-            <div className=" block md:hidden cursor-pointer" onClick={MoveNave}>
+            <div className=" block md:hidden cursor-pointer " onClick={MoveNave}>
             <FontAwesomeIcon className="text-4xl" icon={faList} />
             </div>
-            <div className="navbar w-80 -right-80 top-24  z-50 bg-slate-100 fixed">
+            <div className="navbar w-80 -right-80 top-24  z-50 bg-slate-100 fixed md:hidden">
             <div className='flex flex-col  text-3xl  py-10 px-10 text-center space-y-10'>
                   <h1 className="text-3xl font-bold">
                     <Link className="cursor-pointer" to="/">Dragon</Link>
