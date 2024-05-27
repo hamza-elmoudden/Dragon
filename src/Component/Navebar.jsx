@@ -17,7 +17,7 @@ export const Navebar = () => {
     <>
         <motion.header animate={{top:0}} transition={{duration:0.5}} className='md:py-10  py-3 text-right px-5 fixed w-full md:relative bg-white z-50 h-24 top-[-10rem] '>
             <nav className='hidden md:flex items-center  w-full justify-around container mx-auto '>
-                <div className='flex  items-center  md:text-2xl justify-between  space-x-10'>
+                <div className='flex  items-center  md:text-2xl justify-between gap-32'>
                   <h1 className="text-3xl font-bold">
                     <Link className="cursor-pointer" to="/">Dragon</Link>
                   </h1>
